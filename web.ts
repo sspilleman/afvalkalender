@@ -46,8 +46,11 @@ const handler: Deno.ServeHandler = async (request: Request) => {
 
 const hostname = "0.0.0.0";
 const port = 10101;
-const options:
+
+type ServeOptions =
   | Deno.ServeTcpOptions
-  | (Deno.ServeTcpOptions & Deno.TlsCertifiedKeyPem) = { hostname, port };
+  | (Deno.ServeTcpOptions & Deno.TlsCertifiedKeyPem);
+
+const options: ServeOptions = { hostname, port };
 
 Deno.serve(options, handler);
