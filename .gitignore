@@ -1,4 +1,2 @@
 node_modules/
-.env
-notes.txt
-os2026.json
+.DS_Store
