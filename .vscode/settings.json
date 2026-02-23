@@ -1,0 +1,28 @@
+{
+  "deno.config": "deno.jsonc",
+  "deno.enable": true,
+  "deno.internalDebug": false,
+  "deno.lint": true,
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": true,
+    "https://x.nest.land": true
+  },
+  "deno.testing.args": ["--allow-all"],
+  "deno.unstable": ["kv", "net", "temporal"],
+  "prettier.enable": false,
+  "debug.javascript.enableNetworkView": false,
+  "deno.internalInspect": false,
+  "sqltools.connections": [
+    {
+      "ssh": "Disabled",
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "graph",
+      "group": "localhost",
+      "database": "graph",
+      "username": "graph"
+    }
+  ],
+}

@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Deno",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "deno",
+      "runtimeArgs": [
+        "--allow-all",
+        "--inspect-brk",
+        "--unstable-kv",
+        "--unstable-net",
+        "--unstable-temporal",
+        "--unstable-webgpu",
+        "${file}"
+      ],
+      "attachSimplePort": 9229,
+      "outputCapture": "std",
+      "experimentalNetworking": "off"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "version": "5",
+  "specifiers": {
+    "jsr:@std/media-types@^1.1.0": "1.1.0",
+    "npm:@touch4it/ical-timezones@^1.9.0": "1.9.0",
+    "npm:date-fns@^4.1.0": "4.1.0",
+    "npm:ical-generator@10": "10.0.0_@touch4it+ical-timezones@1.9.0"
+  },
+  "jsr": {
+    "@std/media-types@1.1.0": {
+      "integrity": "c9d093f0c05c3512932b330e3cc1fe1d627b301db33a4c2c2185c02471d6eaa4"
+    }
+  },
+  "npm": {
+    "@touch4it/ical-timezones@1.9.0": {
+      "integrity": "sha512-UAiZMrFlgMdOIaJDPsKu5S7OecyMLr3GGALJTYkRgHmsHAA/8Ixm1qD09ELP2X7U1lqgrctEgvKj9GzMbczC+g=="
+    },
+    "date-fns@4.1.0": {
+      "integrity": "sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg=="
+    },
+    "ical-generator@10.0.0_@touch4it+ical-timezones@1.9.0": {
+      "integrity": "sha512-YUQ7H4eZdLfYvx3zE/qN4AoG0qqwMZG37vLdWzysXFDn/YQEfctZ9tQuPSBncARKgv79d2smWf5Sh67k6xiZfg==",
+      "dependencies": [
+        "@touch4it/ical-timezones"
+      ],
+      "optionalPeers": [
+        "@touch4it/ical-timezones"
+      ]
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/media-types@^1.1.0",
+      "npm:@touch4it/ical-timezones@^1.9.0",
+      "npm:date-fns@^4.1.0",
+      "npm:ical-generator@10"
+    ]
+  }
+}
