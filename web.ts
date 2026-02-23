@@ -1,6 +1,6 @@
 import { getCalendar } from "./api.ts";
 import { getIcal } from "./ical.ts";
-import { RouteHandler, Router } from "libs/router/mod.ts";
+import { RouteHandler, Router } from "./router.ts";
 
 const getCal: RouteHandler = async (_request, _params, headers) => {
   const json = await getCalendar();
